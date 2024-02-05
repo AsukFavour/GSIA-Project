@@ -1,0 +1,146 @@
+/* HomePage.css */
+.gsia-section{
+  text-align: center;
+  margin: 3rem 10rem;
+}
+
+.gs-hd1, .gs-hd2{
+  font-weight: 700;
+  margin: 0;
+  animation: 2s anim-gs-hd1 ease-out 0.7;
+}
+@keyframes anim-gs-hd1 {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.gs-hd2{
+  color:#1f2544;
+}
+
+.card-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 30px;
+}
+
+.card {
+  flex-basis: calc(25% - 20px);
+  background-color:#1f2544;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  text-align: center;
+  margin: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color:#81689D;
+}
+
+.card i {
+  font-size: 45px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+}
+
+.header {
+  background-color: #fff;
+  color: #1f2544;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.home-page {
+  display: flex;
+  margin: 0 30px;
+}
+
+.image-section {
+  flex: 1;
+  max-width: 60%; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.content-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.column {
+  margin-bottom: 20px;
+}
+
+.column h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.column p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .gsia-section{
+    margin: 3rem 1rem;
+  }
+
+
+  .card-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 20px;
+    margin-right: 20px; 
+    width:70%;
+  }
+
+ 
+  .home-page {
+    flex-direction: column;
+  }
+
+  .image-section,
+  .content-section {
+    max-width: 100%;
+  }
+}

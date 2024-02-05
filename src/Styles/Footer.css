@@ -1,0 +1,88 @@
+/* Footer.css */
+.footer {
+    background-color: #1F2544;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    width: 80px;
+    height: auto;
+  }
+  
+  .links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .footer-links,
+  .footer-contact,
+  .footer-social,
+  .footer-info {
+    flex-basis: calc(25% - 20px);
+    margin-bottom: 20px;
+    margin: 0 10px 20px 10px;
+  }
+  
+  .footer-links h4,
+  .footer-contact h4,
+  .footer-social h4,
+  .footer-info h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul,
+  .footer-social {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li,
+  .footer-social a {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a,
+  .footer-info a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-social i {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  .footer-contact p {
+    margin: 0;
+  }
+  
+  .copyright,
+  .privacy-policy {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  /* Media Query for Responsive Design */
+  @media (max-width: 768px) {
+    .footer-links,
+    .footer-contact,
+    .footer-social,
+    .footer-info {
+      flex-basis: 100%;
+    }
+  }
+  
