@@ -1,0 +1,155 @@
+/* About.css */
+.about-section {
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .about-sub{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px
+;  }
+  
+  .collage-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    place-items: center;
+  }
+  
+  .collage-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    justify-self: center;
+  }
+  
+  .collage-image-bn {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    justify-self: center;
+  }
+  .section-header {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .prin{
+    margin:0 70px;
+  }
+  
+  .section-content {
+    font-size: 16px;
+    color: #555;
+    max-width: 800px;
+    margin: 15px auto;
+  }
+  
+
+  .principal-statement {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+  }
+  
+  .principal-image {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    border-radius: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .principal-text {
+    font-style: italic;
+    flex: 1;
+    padding: 30px;
+  }
+  
+  .signature-image {
+    width: 150px; /* Adjust size as needed */
+    height: auto; /* Adjust size as needed */
+    text-align: left;
+  }
+
+  /* About.css */
+.core-values-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.core-value-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.core-value-card:hover .overlay {
+  opacity: 0.3;
+}
+
+.core-value-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+}
+
+.number {
+  background-color: #fff;
+  color: #1f2544;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-header {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .principal-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .signature-image {
+    width: 100px;
+  }
+
+  .core-values-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+  

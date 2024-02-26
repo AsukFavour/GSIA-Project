@@ -1,0 +1,103 @@
+/* Academics.css */
+.acd-intro {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .acd-header {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .acd-content {
+    font-size: 16px;
+  }
+  
+  .section-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .class-cards-section {
+    padding: 20px;
+  }
+  
+  .class-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .class-card {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .class-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 14px;
+  }
+  
+  .campus-section {
+    padding: 20px;
+  }
+  
+  .campus-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .campus-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .campus-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .other-activities-section {
+    padding: 20px;
+  }
+  
+  .activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .activity-card {
+    text-align: center;
+  }
+  
+  .activity-image {
+    width: 100%;
+    height: 50%;
+    border-radius: 8px;
+  }
+  
+  .activity-header {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .activity-text {
+    font-size: 14px;
+  }
+  

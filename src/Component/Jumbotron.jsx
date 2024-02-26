@@ -1,7 +1,9 @@
 // src/Jumbotron.jsx
 import React, { useState, useEffect } from 'react';
 import '../Styles/Jumbotron.css';
-import image1 from '../assets/image1.jpg';
+import image1 from '../assets/collage/image1.jpg';
+import image2 from '../assets/collage/image2.jpg';
+import image3 from '../assets/collage/image3.jpg';
 
 const carouselData = [
   {
@@ -10,12 +12,12 @@ const carouselData = [
     text: 'Discover amazing content and services.',
   },
   {
-    image: 'https://via.placeholder.com/800x400',
+    image: image2,
     title: 'Explore Exciting Features',
     text: 'Find new possibilities with our innovative tools.',
   },
   {
-    image: 'https://via.placeholder.com/800x400',
+    image: image3,
     title: 'Join Our Community',
     text: 'Connect with like-minded individuals.',
   },

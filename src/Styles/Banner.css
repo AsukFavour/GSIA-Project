@@ -26,18 +26,18 @@
   }
   
   h1 {
-    font-size: 36px;
+    font-size: 6rem;
     margin: 0;
   }
   
   /* Responsive Styles */
   @media (max-width: 768px) {
     .banner {
-      height: 200px;
+      height: 250px;
     }
   
     h1 {
-      font-size: 24px;
+      font-size: 3.5rem;
     }
   }
   
