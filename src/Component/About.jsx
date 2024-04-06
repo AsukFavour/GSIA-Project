@@ -3,7 +3,6 @@ import React from 'react';
 import Navbar from '../Component/Navbar';
 import Banner from './Banner';
 import Footer from './Footer';
-import image from '../assets/image1.jpg';
 import '../Styles/About.css';
 import collageImage1 from '../assets/collage/image1.jpg';
 import collageImage2 from '../assets/collage/image2.jpg';
