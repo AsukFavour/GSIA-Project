@@ -21,13 +21,13 @@ const Navbar = () => {
           <i className="fas fa-bars"></i>
         </div>
         <ul className={`nav-links ${showMenu ? 'show' : ''}`}>
-          <li><Link to={'/'}>Home</Link></li>
-          <li><Link to={'/academics'}>Academics</Link></li>
-          <li><Link to={'/about'}>About Us</Link></li>
-          <li><Link to={'/courses'}>Courses</Link></li>
-          <li><Link to={'/gallery'}>Gallery</Link></li>
-          <li><Link to={'/contact'}>Contact</Link></li>
-          <li><Link to={'/admission'}>Admission</Link></li>
+          <Link to={'/'}><li>Home</li></Link>
+          <Link to={'/academics'}><li>Academics</li></Link>
+          <Link to={'/about'}><li>About Us</li></Link>
+          <Link to={'/courses'}><li>Courses</li></Link>
+          <Link to={'/gallery'}><li>Gallery</li></Link>
+          <Link to={'/contact'}><li>Contact</li></Link>
+          <Link to={'/admission'}><li>Admission</li></Link>
         </ul>
       </div>
     </nav>

@@ -5,7 +5,8 @@
 }
 
 .gs-hd1, .gs-hd2{
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 3rem;
   margin: 0;
   animation: 2s anim-gs-hd1 ease-out 0.7;
 }

@@ -12,7 +12,7 @@ const Banner = ({ backgroundImage, text }) => {
     <div className="banner" style={bannerStyle}>
         <div className="overlay"></div>
       <div className="banner-content">
-        <h1>{text}</h1>
+        <h1 className='bnrtxt'>{text}</h1>
       </div>
     </div>
   );
