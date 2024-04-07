@@ -4,7 +4,7 @@ import Jumbotron from './Jumbotron';
 import ReviewSection from './ReviewSection';
 import Footer from './Footer';
 import gsiaImage from '../assets/image1.jpg';
-import IntroSection from './Introsection';
+// import IntroSection from './Introsection';
 import '../Styles/Home.css';
 
 function Home() {
@@ -82,7 +82,7 @@ function Home() {
       </div>
     </div>
     
-    <IntroSection/>
+    {/* <IntroSection/> */}
     <ReviewSection/>
     <Footer/>
     </>
