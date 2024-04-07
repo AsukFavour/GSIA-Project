@@ -4,7 +4,6 @@ import Jumbotron from './Jumbotron';
 import ReviewSection from './ReviewSection';
 import Footer from './Footer';
 import gsiaImage from '../assets/image1.jpg';
-// import IntroSection from './Introsection';
 import '../Styles/Home.css';
 
 function Home() {
@@ -82,7 +81,16 @@ function Home() {
       </div>
     </div>
     
-    {/* <IntroSection/> */}
+    <div className="intro-section">
+      <div className="in-overlay"></div>
+      <div className="in-context">
+        <h1 className="in-cxt">This is your school.</h1>
+        <p>
+          This is your journey. This is the extraordinary opportunity your story
+          deserves.
+        </p>
+      </div>
+    </div>
     <ReviewSection/>
     <Footer/>
     </>
