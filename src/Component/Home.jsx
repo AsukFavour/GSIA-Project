@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
-import Navbar from './Navbar'
-import Jumbotron from './Jumbotron'
-import IntroSection from './Introsection'
+import Navbar from './Navbar';
+import Jumbotron from './Jumbotron';
 import ReviewSection from './ReviewSection';
-import Footer from './Footer'
-import gsiaImage from '../assets/image1.jpg'
-import '../Styles/Home.css'
+import Footer from './Footer';
+import gsiaImage from '../assets/image1.jpg';
+import IntroSection from './Introsection';
+import '../Styles/Home.css';
 
 function Home() {
   useEffect(() => {
