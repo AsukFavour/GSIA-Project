@@ -1,5 +1,5 @@
 // Footer.js
-import React from 'react';
+ 
 import '../Styles/Footer.css';
 import logo from '../assets/logo/gsia-logo.png';
 

@@ -1,5 +1,4 @@
 // Academics.js
-import React from "react";
 import Navbar from "../Component/Navbar";
 import Banner from "./Banner";
 import Footer from "./Footer";
@@ -25,30 +24,14 @@ export default function Academics() {
       <div className="acd-intro">
         <h1 className="acd-header">Educational Philosophy</h1>
         <p className="acd-content">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-          maiores asperiores reiciendis, voluptatum quod eveniet, natus
-          consectetur molestiae ea impedit dolore dignissimos facere,
-          reprehenderit quisquam ullam facilis. Quisquam nihil minima
-          perferendis in qui? Repellendus temporibus aliquid cupiditate cumque
-          soluta architecto excepturi nam corporis omnis molestiae consequuntur
-          rerum sit veniam voluptate minima, ipsum, quas officia quod pariatur
-          reprehenderit nisi sapiente animi! Expedita alias, libero veritatis
-          minima dolores architecto quod mollitia, doloremque a quae aliquam
-          facilis animi recusandae sunt repellat ab, et totam quos ad?
-          Voluptates, quibusdam amet maiores sint culpa voluptatibus quam,
-          doloremque, dolore nam aut praesentium. Doloribus error nostrum
-          tempore blanditiis eius libero provident ut sunt, vitae aperiam
-          debitis itaque! Assumenda amet officia culpa, consequuntur libero unde
-          molestiae beatae officiis magnam tenetur voluptas quae eaque sunt
-          suscipit error vero fugit sint quam esse, quaerat obcaecati vel!
-          Similique, dignissimos quibusdam sint voluptate placeat porro! Fugiat,
-          assumenda! Velit architecto voluptates ad harum dolorem placeat
-          numquam officiis fugiat. Nihil doloremque velit quo perferendis,
-          numquam error sit qui, repellendus blanditiis eveniet excepturi eos,
-          aliquam ab assumenda porro dolorum sed possimus provident omnis?
-          Reiciendis doloribus, minus quo dolores eum repudiandae suscipit
-          minima odio. Voluptate aliquid hic neque omnis quos illum sunt
-          cupiditate laudantium voluptatibus nesciunt!
+          The aim of education should be to teach us rather how to think, than
+          what to think – rather to improve our minds, so as to enable us to
+          think for ourselves, than to load the memory with thoughts of other
+          men.- <i>John Dewey</i>
+        </p>
+        <p className="acd-content">
+          Education is the most powerful weapon which you can use to change the
+          world. - <i>Nelson Mandela </i>
         </p>
       </div>
 
@@ -123,28 +106,51 @@ export default function Academics() {
         <h2 className="section-header">Other School Activities</h2>
         <div className="activity-grid">
           <div className="activity-card">
-            <img src={sportsImage} alt="Sports and Games" className="activity-image" />
+            <img
+              src={sportsImage}
+              alt="Sports and Games"
+              className="activity-image"
+            />
             <h3 className="activity-header">Sports and Games</h3>
-            <p className="activity-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p className="activity-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
           </div>
           <div className="activity-card">
-            <img src={excursionImage} alt="Excursion" className="activity-image" />
+            <img
+              src={excursionImage}
+              alt="Excursion"
+              className="activity-image"
+            />
             <h3 className="activity-header">Excursion</h3>
-            <p className="activity-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p className="activity-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
           </div>
           <div className="activity-card">
-            <img src={interschoolClubsImage} alt="Interschool Clubs" className="activity-image" />
+            <img
+              src={interschoolClubsImage}
+              alt="Interschool Clubs"
+              className="activity-image"
+            />
             <h3 className="activity-header">Interschool Clubs</h3>
-            <p className="activity-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p className="activity-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
           </div>
           <div className="activity-card">
-            <img src={communityServicesImage} alt="Community Services" className="activity-image" />
+            <img
+              src={communityServicesImage}
+              alt="Community Services"
+              className="activity-image"
+            />
             <h3 className="activity-header">Community Services</h3>
-            <p className="activity-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p className="activity-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
           </div>
         </div>
       </div>
-
 
       <Footer />
     </>

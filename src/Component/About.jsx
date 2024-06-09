@@ -1,5 +1,5 @@
 // About.js
-import React from 'react';
+ 
 import Navbar from '../Component/Navbar';
 import Banner from './Banner';
 import Footer from './Footer';
