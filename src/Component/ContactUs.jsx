@@ -14,10 +14,17 @@ function ContactUs() {
       <div className="contact-section">
         <div className="contact-info">
           <h2>Contact Us</h2>
+          <b>Woji campus</b>
+          <p>Address: 123 School Street, City, Country</p>
+          <p>Phone: +123 456 7890</p>
+          <p>Email: info@schoolname.com</p>
+          <br />
+          <b>Ireibe campus</b>
           <p>Address: 123 School Street, City, Country</p>
           <p>Phone: +123 456 7890</p>
           <p>Email: info@schoolname.com</p>
         </div>
+        
         <div className="contact-form">
           <h2>Get in Touch</h2>
           <form>

@@ -82,7 +82,7 @@ function Home() {
     </div>
     
     <div className="intro-section">
-      <div className="in-overlay"></div>
+      <div className="overlay"></div>
       <div className="in-context">
         <h1 className="in-cxt">This is your school.</h1>
         <p>

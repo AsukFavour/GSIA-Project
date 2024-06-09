@@ -4,7 +4,7 @@ import About from './Component/About';
 import Academics from './Component/Academics';
 import ContactUs from './Component/ContactUs';
 import Gallery from './Component/Gallery';
-
+import Calendar from './Component/Calendar';
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Route path='/academics' element={<Academics/>}/>
         <Route path='/contact' element={<ContactUs/>}/>
         <Route path='/gallery' element={<Gallery/>}/>
-
+        <Route path='/calender' element={<Calendar/>}/>
       </Routes>
     </Router>
   )

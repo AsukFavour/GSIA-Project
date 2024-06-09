@@ -34,7 +34,7 @@ function About() {
 
       {/* Collage Grid */}
       <div className="about-section">
-        <h2 className="section-header">Our Collage</h2>
+        <h2 className="section-header">Our College</h2>
         <div className="collage-grid">
           <img src={collageImage1} alt="Collage Image" className="collage-image" />
           <img src={collageImage2} alt="Collage Image" className="collage-image" />

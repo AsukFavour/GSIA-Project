@@ -1,5 +1,5 @@
 // Navbar.js
-import React, { useState } from 'react';
+import { useState } from 'react';
 import '../Styles/Navbar.css';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo/gsia-logo.png';
@@ -26,6 +26,7 @@ const Navbar = () => {
           <Link to={'/about'}><li>About Us</li></Link>
           <Link to={'/courses'}><li>Courses</li></Link>
           <Link to={'/gallery'}><li>Gallery</li></Link>
+          <Link to={'/calender'}><li>Calender</li></Link>
           <Link to={'/contact'}><li>Contact</li></Link>
           <Link to={'/admission'}><li>Admission</li></Link>
         </ul>
