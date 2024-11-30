@@ -5,6 +5,10 @@ import Academics from './Component/Academics';
 import ContactUs from './Component/ContactUs';
 import Gallery from './Component/Gallery';
 import Calendar from './Component/Calendar';
+import Admission from './Component/Admission';
+import Payment from './Component/Payment';
+
+
 
 
 function App() {
@@ -17,7 +21,9 @@ function App() {
         <Route path='/academics' element={<Academics/>}/>
         <Route path='/contact' element={<ContactUs/>}/>
         <Route path='/gallery' element={<Gallery/>}/>
-        <Route path='/calender' element={<Calendar/>}/>
+        <Route path='/calendar' element={<Calendar/>}/>
+        <Route path='/admission' element={<Admission/>}/>
+        <Route path='/payment' element={<Payment/>}/>
       </Routes>
     </Router>
   )

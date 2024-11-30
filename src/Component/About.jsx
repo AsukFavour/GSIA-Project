@@ -47,9 +47,15 @@ function About() {
       <div className="about-section">
         <h2 className="section-header">About GSIA</h2>
         <p className="section-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod sem at magna ullamcorper,
-          id fringilla arcu gravida. Suspendisse potenti. Sed at libero euismod, fermentum orci a, vehicula
-          nisl. Quisque nec fermentum libero.
+        The Good Seed International academy is a learning and educational
+              development institution founded in 2009 to promote the forthright
+              development of the Nigerian child by adopting the latest techiques
+              and tested educational tools available today to develop children
+              into a future of greatness devoid of dubious and unethical
+              methodology and costly shortcuts.
+        </p>
+        <p className="section-content">
+          Good seed International academy is established on a strong christain principles and sound moral values based on time tested biblical principles.
         </p>
       </div>
 
@@ -59,9 +65,7 @@ function About() {
         <h2 className="section-header">Our Mission</h2>
         <img src={missionImage} alt="Mission" className="collage-image-bn" />
         <p className="section-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod sem at magna ullamcorper,
-          id fringilla arcu gravida. Suspendisse potenti. Sed at libero euismod, fermentum orci a, vehicula
-          nisl. Quisque nec fermentum libero.
+          The Good Seed International academy is committed to creating the enabling environment for unparalleled academic excellence that will propel your child into the future of greatness.
         </p>
       </div>
 
@@ -70,9 +74,7 @@ function About() {
         <h2 className="section-header">Our Vision</h2>
         <img src={visionImage} alt="Vision" className="collage-image-bn" />
         <p className="section-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod sem at magna ullamcorper,
-          id fringilla arcu gravida. Suspendisse potenti. Sed at libero euismod, fermentum orci a, vehicula
-          nisl. Quisque nec fermentum libero.
+         Our vision is to raise our children into a future of greatimes, under the tutelage of qualified and God fearing teachers.
         </p>
       </div>
       

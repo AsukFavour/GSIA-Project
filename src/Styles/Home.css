@@ -40,7 +40,7 @@
 
 .card {
   flex-basis: calc(25% - 20px);
-  background-color:#1f2544;
+  background-color:#1f2544 !important;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
@@ -50,7 +50,7 @@
 
 .card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  background-color:#81689D;
+  background-color:#81689D !important;
 }
 
 .card i {
