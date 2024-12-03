@@ -20,8 +20,53 @@ const Payment = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Callback function to handle successful payments
-  const fwCallback = (response) => {
+ 
+
+  // Flutterwave Payment Configuration
+  const config = {
+    public_key: import.meta.env.VITE_FLUTTERWAVE_PUBLIC_KEY, // Flutterwave public key
+    tx_ref: Date.now().toString(),
+    amount: formData.amount,
+    currency: "NGN",
+    payment_options: "card, banktransfer, ussd",
+    customer: {
+      email: formData.email,
+      name: formData.payerName,
+    },
+    customizations: {
+      title: "GSIA",
+      description: `Payment for ${formData.typeOfFees} (${formData.class}, ${formData.term || "N/A"})`,
+      logo: logo,
+    },
+  };
+
+  const handleFlutterPayment = useFlutterwave(config);
+
+  const sendEmail = (data) => {
+    emailjs
+      .send(
+        "your_email_service_id", // Replace with your EmailJS service ID
+        "your_email_template_id", // Replace with your EmailJS template ID
+        {
+          student_name: data.studentName,
+          payer_name: data.payerName,
+          class: data.class,
+          term: data.term,
+          type_of_fees: data.typeOfFees,
+          email: data.email,
+          amount: data.amount,
+          transaction_id: data.transactionId,
+        },
+        "your_emailjs_user_id" // Replace with your EmailJS user ID
+      )
+      .then(
+        () => console.log("Email sent successfully!"),
+        (error) => console.error("Failed to send email:", error)
+      );
+  };
+
+   // Callback function to handle successful payments
+   const fwCallback = (response) => {
     if (response.status === "successful") {
       // Determine schema type based on type of fees
       const schemaType =
@@ -82,49 +127,6 @@ const Payment = () => {
 
       closePaymentModal(); // Close the payment modal
     }
-  };
-
-  // Flutterwave Payment Configuration
-  const config = {
-    public_key: import.meta.env.VITE_FLUTTERWAVE_PUBLIC_KEY, // Flutterwave public key
-    tx_ref: Date.now().toString(),
-    amount: formData.amount,
-    currency: "NGN",
-    payment_options: "card, banktransfer, ussd",
-    customer: {
-      email: formData.email,
-      name: formData.payerName,
-    },
-    customizations: {
-      title: "School Payment",
-      description: `Payment for ${formData.typeOfFees} (${formData.class}, ${formData.term || "N/A"})`,
-      logo: logo,
-    },
-  };
-
-  const handleFlutterPayment = useFlutterwave(config);
-
-  const sendEmail = (data) => {
-    emailjs
-      .send(
-        "your_email_service_id", // Replace with your EmailJS service ID
-        "your_email_template_id", // Replace with your EmailJS template ID
-        {
-          student_name: data.studentName,
-          payer_name: data.payerName,
-          class: data.class,
-          term: data.term,
-          type_of_fees: data.typeOfFees,
-          email: data.email,
-          amount: data.amount,
-          transaction_id: data.transactionId,
-        },
-        "your_emailjs_user_id" // Replace with your EmailJS user ID
-      )
-      .then(
-        () => console.log("Email sent successfully!"),
-        (error) => console.error("Failed to send email:", error)
-      );
   };
 
   return (
