@@ -164,7 +164,7 @@ export default function SchoolHeader() {
               to="/payment"
               className="block bg-[#81689D] text-center text-white px-4 py-2 rounded-md font-semibold hover:bg-[#6a5780] transition no-underline"
             >
-              Payment
+            Payments
             </Link>
           </div>
         </DialogPanel>
