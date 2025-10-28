@@ -1,9 +1,13 @@
-// About.js
- 
 import Navbar from '../Component/Navbar';
 import Banner from './Banner';
 import Footer from './Footer';
-import '../Styles/About.css';
+import CollageSection from './About/CollageSection';
+import AboutGSIASection from './About/AboutGSIASection';
+import MissionVisionSection from './About/MissionVisionSection';
+import PrincipalStatement from './About/PrincipalStatement';
+import CoreValuesSection from './About/CoreValuesSection';
+
+// Images
 import collageImage1 from '../assets/collage/image1.jpg';
 import collageImage2 from '../assets/collage/image2.jpg';
 import collageImage3 from '../assets/collage/image3.jpg';
@@ -12,108 +16,57 @@ import missionImage from '../assets/collage/image4.jpg';
 import visionImage from '../assets/collage/image5.jpg';
 import principalImage from '../assets/principal.jpg';
 import coreValueImage1 from '../assets/collage/image1.jpg';
-import coreValueImage2 from '../assets/collage/image1.jpg';
-import coreValueImage3 from '../assets/collage/image1.jpg';
-import coreValueImage4 from '../assets/collage/image1.jpg';
-import coreValueImage5 from '../assets/collage/image1.jpg';
+import coreValueImage2 from '../assets/collage/image2.jpg';
+import coreValueImage3 from '../assets/collage/image3.jpg';
+import coreValueImage4 from '../assets/collage/image4.jpg';
+import coreValueImage5 from '../assets/collage/image5.jpg';
 import signatureImage from '../assets/signature.png';
 
 function About() {
+  const collageImages = [collageImage1, collageImage2, collageImage3, collageImage4];
 
   const coreValues = [
-    { number: '1', header: 'Excellence', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: coreValueImage1 },
-    { number: '2', header: 'Integrity', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: coreValueImage2 },
-    { number: '3', header: 'Innovation', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: coreValueImage3 },
-    { number: '4', header: 'Diversity', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: coreValueImage4 },
-    { number: '5', header: 'Community', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: coreValueImage5 },
+    { 
+      number: '1', 
+      header: 'Excellence', 
+      text: 'We strive for academic excellence and continuous improvement in all aspects of education.', 
+      image: coreValueImage1 
+    },
+    { 
+      number: '2', 
+      header: 'Integrity', 
+      text: 'We uphold honesty, transparency, and strong moral principles in everything we do.', 
+      image: coreValueImage2 
+    },
+    { 
+      number: '3', 
+      header: 'Innovation', 
+      text: 'We embrace creative thinking and modern educational approaches to enhance learning.', 
+      image: coreValueImage3 
+    },
+    { 
+      number: '4', 
+      header: 'Diversity', 
+      text: 'We celebrate and respect the unique backgrounds and perspectives of every student.', 
+      image: coreValueImage4 
+    },
+    { 
+      number: '5', 
+      header: 'Community', 
+      text: 'We foster a supportive environment where students, parents, and staff work together.', 
+      image: coreValueImage5 
+    },
   ];
+
   return (
     <>
       <Navbar />
       <Banner backgroundImage={collageImage2} text="About GSIA" />
-
-      {/* Collage Grid */}
-      <div className="about-section">
-        <h2 className="section-header">Our College</h2>
-        <div className="collage-grid">
-          <img src={collageImage1} alt="Collage Image" className="collage-image" />
-          <img src={collageImage2} alt="Collage Image" className="collage-image" />
-          <img src={collageImage3} alt="Collage Image" className="collage-image" />
-          <img src={collageImage4} alt="Collage Image" className="collage-image" />
-        </div>
-      </div>
-
-      {/* About Section */}
-      <div className="about-section">
-        <h2 className="section-header">About GSIA</h2>
-        <p className="section-content">
-        The Good Seed International academy is a learning and educational
-              development institution founded in 2009 to promote the forthright
-              development of the Nigerian child by adopting the latest techiques
-              and tested educational tools available today to develop children
-              into a future of greatness devoid of dubious and unethical
-              methodology and costly shortcuts.
-        </p>
-        <p className="section-content">
-          Good seed International academy is established on a strong christain principles and sound moral values based on time tested biblical principles.
-        </p>
-      </div>
-
-      {/* Mission Section */}
-      <div className="about-sub">
-      <div className="about-section">
-        <h2 className="section-header">Our Mission</h2>
-        <img src={missionImage} alt="Mission" className="collage-image-bn" />
-        <p className="section-content">
-          The Good Seed International academy is committed to creating the enabling environment for unparalleled academic excellence that will propel your child into the future of greatness.
-        </p>
-      </div>
-
-      {/* Vision Section */}
-      <div className="about-section">
-        <h2 className="section-header">Our Vision</h2>
-        <img src={visionImage} alt="Vision" className="collage-image-bn" />
-        <p className="section-content">
-         Our vision is to raise our children into a future of greatimes, under the tutelage of qualified and God fearing teachers.
-        </p>
-      </div>
-      
-    </div>
-
-    <div className="about-section prin">
-        <h2 className="section-header">Statement from the Principal</h2>
-        <div className="principal-statement">
-          <img src={principalImage} alt="Principal" className="principal-image" />
-          <div className="inner-statment">
-          <p className="principal-text">
-            <em>
-               &quot; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod sem at magna ullamcorper,
-              id fringilla arcu gravida. Suspendisse potenti. Sed at libero euismod, fermentum orci a, vehicula
-              nisl. Quisque nec fermentum libero. &quot;
-            </em>
-          </p>
-          <img src={signatureImage} alt="Principal's Signature" className="signature-image" />
-        </div>
-        </div>
-      </div>
-
-      {/* Core Values Section */}
-      <div className="about-section">
-        <h2 className="section-header">Our Core Values</h2>
-        <div className="core-values-grid">
-          {coreValues.map((coreValue, index) => (
-            <div className="core-value-card" key={index}>
-              <div className="overlay"></div>
-              <img src={coreValue.image} alt={`Core Value ${coreValue.number}`} className="core-value-image" />
-              <div className="card-content">
-                <div className="number">{coreValue.number}</div>
-                <h3 className="card-header">{coreValue.header}</h3>
-                <p className="card-text">{coreValue.text}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <CollageSection images={collageImages} />
+      <AboutGSIASection />
+      <MissionVisionSection missionImage={missionImage} visionImage={visionImage} />
+      <PrincipalStatement principalImage={principalImage} signatureImage={signatureImage} />
+      <CoreValuesSection coreValues={coreValues} />
       <Footer />
     </>
   );

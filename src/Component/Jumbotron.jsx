@@ -1,27 +1,13 @@
-'use client'
-
-import  { useState, useEffect } from 'react'
-import image1 from '../assets/collage/image1.jpg'
-import image2 from '../assets/collage/image2.jpg'
-import image3 from '../assets/collage/image3.jpg'
+import { useState, useEffect } from "react";
+import gsia1 from "../assets/gsia1.jpg";
+import gsia2 from "../assets/gsia2.jpg";
+import gsia3 from "../assets/gsia3.jpg";
 
 const carouselData = [
-  {
-    image: image1,
-    title: 'Welcome to Our School',
-    text: 'Empowering students for a brighter future.',
-  },
-  {
-    image: image2,
-    title: 'Discover Your Potential',
-    text: 'Join a community of excellence and innovation.',
-  },
-  {
-    image: image3,
-    title: 'Shape Your Dreams',
-    text: 'Experience world-class education and opportunities.',
-  },
-]
+  { image: gsia1 },
+  { image: gsia2 },
+  { image: gsia3 }
+];
 
 export default function Jumbotron() {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -30,72 +16,62 @@ export default function Jumbotron() {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselData.length)
   }
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + carouselData.length) % carouselData.length)
-  }
-
   useEffect(() => {
     const intervalId = setInterval(nextSlide, 5000)
     return () => clearInterval(intervalId)
   }, [])
 
   return (
-    <div className="relative bg-gray-900 text-white py-4">
+    <div className="relative bg-gray-200 overflow-hidden">
       {/* Carousel Container */}
-      <div className="relative mx-auto max-w-7xl overflow-hidden rounded-lg">
+      <div className="relative h-screen max-h-[600px]">
         <div
-          className="flex transition-transform duration-500"
+          className="flex transition-transform duration-700 ease-in-out h-full"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {carouselData.map((slide, index) => (
             <div
               key={index}
-              className="relative min-w-full flex-none bg-cover bg-center"
+              className="relative min-w-full flex-none bg-cover bg-center h-full"
               style={{
                 backgroundImage: `url(${slide.image})`,
-                height: '500px',
               }}
             >
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-black/50"></div>
-              {/* Text Content */}
-              <div className="relative z-10 flex h-full flex-col items-center justify-center text-center px-4 sm:px-10">
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">{slide.title}</h2>
-                <p className="mt-4 text-base sm:text-lg lg:text-xl max-w-2xl">{slide.text}</p>
+              {/* Dark Overlay */}
+              <div className="absolute inset-0 bg-black/40 z-0"></div>
+              
+              {/* Left Content Section */}
+              <div className="absolute left-0 top-0 h-full w-full md:w-1/2 flex items-center z-10">
+                <div className="px-8 md:px-16 lg:px-24">
+                  <p className="text-purple-400 text-sm font-medium mb-2">Welcome To Our Website</p>
+                  <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
+                    Bring Fun Life To<br />Your Kids
+                  </h1>
+                  <p className="text-white text-lg mb-8">Amazing Playground for your kids</p>
+                  <a
+                    href="#learn-more"
+                    className="inline-block bg-purple-600 px-8 py-4 text-sm font-semibold text-white rounded shadow-lg hover:bg-purple-700 transition-colors no-underline uppercase tracking-wide"
+                  >
+                    Learn More
+                  </a>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Carousel Controls */}
-        <button
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/70 p-3 rounded-full text-white hover:bg-black/50"
-          onClick={prevSlide}
-        >
-          &lt;
-        </button>
-        <button
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/70 p-3 rounded-full text-white hover:bg-black/50"
-          onClick={nextSlide}
-        >
-          &gt;
-        </button>
-      </div>
-
-      {/* Call-to-Action Buttons */}
-      <div className="flex justify-center mt-8 gap-6">
-        <a
-          href="#admissions"
-          className="inline-block bg-indigo-600 px-6 py-3 text-sm no-underline font-semibold text-white rounded-lg shadow-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2"
-        >
-          Apply Now
-        </a>
-        <a
-          href="#learn-more"
-          className="inline-block px-6 py-3 text-sm no-underline font-semibold text-indigo-600 border border-indigo-600 rounded-lg shadow-md hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2"
-        >
-          Learn More
-        </a>
+        {/* Carousel Indicators */}
+        <div className="absolute bottom-8 left-8 md:left-24 flex gap-2 z-20">
+          {carouselData.map((_, index) => (
+            <button
+              key={index}
+              className={`w-3 h-3 rounded-full transition-all ${
+                index === currentIndex ? 'bg-purple-600 w-8' : 'bg-white/50'
+              }`}
+              onClick={() => setCurrentIndex(index)}
+            />
+          ))}
+        </div>
       </div>
     </div>
   )
