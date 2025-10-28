@@ -1,5 +1,5 @@
 // Gallery.js
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import Navbar from '../Component/Navbar';
 import Footer from './Footer';
 import { Modal } from 'react-responsive-modal';

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3"; // Import Flutterwave hook
+import { useState } from "react";
+import { useFlutterwave } from "flutterwave-react-v3"; // Import Flutterwave hook
 import { client } from "../sanityClient";
 import emailjs from "emailjs-com";
 import logo from "../assets/logo/logo.png";
@@ -124,8 +124,6 @@ const Payment = () => {
           console.error("Failed to save payment to Sanity:", error);
           alert("Payment successful, but saving to the backend failed.");
         });
-
-      closePaymentModal(); // Close the payment modal
     }
   };
 

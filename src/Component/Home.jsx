@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import Navbar from "./Navbar";
 import Jumbotron from "./Jumbotron";
 import ReviewSection from "./ReviewSection";
@@ -33,7 +33,7 @@ function Home() {
         <h1 className="text-3xl sm:text-4xl font-semibold mb-2 animate-fade-up">Welcome to</h1>
         <h1 className="text-4xl sm:text-5xl font-bold text-[#1f2544]">The Good Seed International Academy</h1>
         <h4 className="text-lg sm:text-xl font-medium text-gray-700 mt-4">
-          Where raising tomorrow's leaders is our top priority.
+          Where raising tomorrow&apos;s leaders is our top priority.
         </h4>
       </div>
 

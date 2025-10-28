@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import  { useState, useEffect } from 'react'
 import image1 from '../assets/collage/image1.jpg'
 import image2 from '../assets/collage/image2.jpg'
 import image3 from '../assets/collage/image3.jpg'
