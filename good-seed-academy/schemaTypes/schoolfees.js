@@ -5,6 +5,7 @@ export default {
   fields: [
     { name: "studentName", title: "Student Name", type: "string" },
     { name: "payerName", title: "Payer Name", type: "string" },
+    { name: "phonenumber", title: "Phone number", type: "number"},
     { name: "class", title: "Class", type: "string" },
     { name: "term", title: "Term", type: "string" },
     { name: "amount", title: "Amount", type: "number" },

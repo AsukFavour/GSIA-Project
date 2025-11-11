@@ -57,7 +57,7 @@ export default function PrincipalStatement({ principalImage, signatureImage }) {
                     className="h-12 sm:h-14 md:h-16 mb-2 sm:mb-3"
                   />
                   <div>
-                    <p className="text-lg sm:text-xl font-bold text-gray-900">Mrs. Principal Name</p>
+                    <p className="text-lg sm:text-xl font-bold text-gray-900">Pst. Mrs. Regina Asuk</p>
                     <p className="text-purple-600 font-semibold text-sm sm:text-base">Principal, GSIA</p>
                   </div>
                 </div>

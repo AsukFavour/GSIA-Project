@@ -74,7 +74,7 @@ export default function SchoolHeader() {
             <Link
               to="/calendar"
               className={`text-sm font-medium no-underline transition ${
-                location.pathname === "/courses" ? "text-purple-600" : "text-gray-700 hover:text-purple-600"
+                location.pathname === "/calendar" ? "text-purple-600" : "text-gray-700 hover:text-purple-600"
               }`}
             >
               Calendar
@@ -82,7 +82,7 @@ export default function SchoolHeader() {
             <Link
               to="/admission"
               className={`text-sm font-medium no-underline transition ${
-                location.pathname === "/contact" ? "text-purple-600" : "text-gray-700 hover:text-purple-600"
+                location.pathname === "/admission" ? "text-purple-600" : "text-gray-700 hover:text-purple-600"
               }`}
             >
               Admission
