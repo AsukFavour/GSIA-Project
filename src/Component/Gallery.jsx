@@ -7,12 +7,12 @@ import { Modal } from 'react-responsive-modal';
 import 'react-responsive-modal/styles.css';
 
 // Sample images
-import bannerImage from '../assets/collage/image1.jpg';
-import image1 from '../assets/collage/image1.jpg';
-import image2 from '../assets/collage/image2.jpg';
-import image3 from '../assets/collage/image3.jpg';
-import image4 from '../assets/collage/image4.jpg';
-import image5 from '../assets/collage/image5.jpg';
+import bannerImage from '../../public/gsia/gsia2.jpg';
+import image1 from '../../public/gsia/gsia2.jpg';
+import image2 from '../../public/gsia/gsia4.jpg';
+import image3 from '../../public/gsia/gsia1.jpg';
+import image4 from '../../public/gsia/gsia3.jpg';
+import image5 from '../../public/gsia/gsia5.jpg';
 
 const images = [
   { src: image1, title: 'Campus Life', category: 'Campus' },

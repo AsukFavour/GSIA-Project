@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import gsia1 from "../assets/gsia1.jpg";
-import gsia2 from "../assets/gsia2.jpg";
-import gsia3 from "../assets/gsia3.jpg";
+import gsia1 from "../../public/gsia/gsia4.jpg";
+import gsia2 from "../../public/gsia/gsia2.jpg";
+import gsia3 from "../../public/gsia/gsia3.jpg";
 
 const carouselData = [
   { image: gsia1 },

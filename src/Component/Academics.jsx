@@ -8,13 +8,13 @@ import CampusSection from "./Academics/Campuses";
 import ActivitiesSection from "./Academics/SchoolActivities";
 
 // Images
-import bannerimage from "../assets/collage/image3.jpg";
-import preNurseryImage from "../assets/class/class0.jpg";
-import nurseryImage from "../assets/class/class1.jpg";
-import primaryImage from "../assets/class/class2.jpg";
-import juniorSecondaryImage from "../assets/class/class3.jpg";
-import campusImage1 from "../assets/campus/image11.jpg";
-import campusImage2 from "../assets/campus/image11.jpg";
+  import bannerimage from "../../public/gsia/gsia3.jpg";
+  import preNurseryImage from "../assets/class/class0.jpg";
+import nurseryImage from "../../public/gsia/gsia3.jpg";
+import primaryImage from "../../public/gsia/gsia4.jpg";
+import juniorSecondaryImage from "../../public/gsia/gsia5.jpg";
+import campusImage1 from "../../public/gsia/gsia1.jpg";
+import campusImage2 from "../../public/gsia/gsia2.jpg";
 import sportsImage from "../assets/sports.jpg";
 import excursionImage from "../assets/excursion.jpg";
 import interschoolClubsImage from "../assets/clubs.jpg";

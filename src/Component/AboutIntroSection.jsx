@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import gsiaImage from "../assets/image1.jpg";
+import gsiaImage from "../../public/gsia/gsia5.jpg";
 
 export default function AboutIntroSection() {
   const [isVisible, setIsVisible] = useState(false);

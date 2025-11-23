@@ -8,18 +8,18 @@ import PrincipalStatement from './About/PrincipalStatement';
 import CoreValuesSection from './About/CoreValuesSection';
 
 // Images
-import collageImage1 from '../assets/collage/image1.jpg';
-import collageImage2 from '../assets/collage/image2.jpg';
-import collageImage3 from '../assets/collage/image3.jpg';
-import collageImage4 from '../assets/collage/image4.jpg';
-import missionImage from '../assets/collage/image4.jpg';
-import visionImage from '../assets/collage/image5.jpg';
+import collageImage1 from '../../public/gsia/gsia1.jpg';
+import collageImage2 from '../../public/gsia/gsia2.jpg';
+import collageImage3 from '../../public/gsia/gsia3.jpg';
+import collageImage4 from '../../public/gsia/gsia4.jpg';
+import missionImage from '../../public/gsia/gsia2.jpg';
+import visionImage from '../../public/gsia/gsia5.jpg';
 import principalImage from '../assets/principal.jpg';
-import coreValueImage1 from '../assets/collage/image1.jpg';
-import coreValueImage2 from '../assets/collage/image2.jpg';
-import coreValueImage3 from '../assets/collage/image3.jpg';
-import coreValueImage4 from '../assets/collage/image4.jpg';
-import coreValueImage5 from '../assets/collage/image5.jpg';
+import coreValueImage1 from '../../public/gsia/gsia2.jpg';
+import coreValueImage2 from '../../public/gsia/gsia4.jpg';
+import coreValueImage3 from '../../public/gsia/gsia1.jpg';
+import coreValueImage4 from '../../public/gsia/gsia3.jpg';
+import coreValueImage5 from '../../public/gsia/gsia5.jpg';
 import signatureImage from '../assets/signature.png';
 
 function About() {
